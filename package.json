@@ -1,10 +1,10 @@
 {
-  "name": "reblog",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "name": "@reblog/reblog",
+  "version": "1.0.0-alpha",
+  "description": "nestjs 驱动的新一代 reblog 后端",
+  "author": "i@redish101.top",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "GPL-3.0-only",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

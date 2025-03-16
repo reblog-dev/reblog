@@ -3,7 +3,7 @@ import { AppModule } from "./app.module";
 import { Logger } from "@innei/pretty-logger-nestjs";
 import { logger } from "./utils/logger.utils";
 import { AnyExceptionFilter } from "./common/filters/any-exception.filter";
-import { ValidationPipe } from '@nestjs/common';
+import { ValidationPipe } from "@nestjs/common";
 import { appConfig } from "./app.config";
 
 async function bootstrap() {
@@ -14,7 +14,7 @@ async function bootstrap() {
 
   app.useGlobalFilters(new AnyExceptionFilter());
 
-  app.useGlobalPipes(new ValidationPipe({ transform: true }))
+  app.useGlobalPipes(new ValidationPipe({ transform: true }));
 
   await app.listen(appConfig.server.port, appConfig.server.host, async () => {
     const url = await app.getUrl();

@@ -28,7 +28,6 @@ export class AnyExceptionFilter<T> implements ExceptionFilter {
         ? exception.getStatus()
         : HttpStatus.INTERNAL_SERVER_ERROR;
 
-    
     const message =
       exception instanceof HttpException
         ? exception.message

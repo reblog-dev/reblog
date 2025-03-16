@@ -36,7 +36,7 @@ const argv: Argv = commander.opts();
 
 const configFilePath = argv.config;
 
-const configFileExists = existsSync(configFilePath)
+const configFileExists = existsSync(configFilePath);
 
 if (!configFileExists) {
   logger.error(`配置文件不存在：${configFilePath}`);
